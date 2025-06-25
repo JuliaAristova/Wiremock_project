@@ -1,17 +1,15 @@
-/*
+package com.wiremock;/*
 1. Start wiremock server: java -jar wiremock-standalone-3.13.1.jar
 2. Add req response mapping: C:\Users\julia\Documents\API\mapping
 3. Run the test
  */
 
 
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 
-public class wm_01_Basic  {
+public class wm_01_Basic_standalone {
 
     @Test
     public void test_1() {
